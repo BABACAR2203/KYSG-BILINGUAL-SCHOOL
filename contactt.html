@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap Responsive Shell</title>
+
+  <!-- Bootstrap 5 (CSS uniquement) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- (Optionnel) Styles minimes pour voir les limites des conteneurs lors des tests -->
+  <style>
+    /* Supprime si tu veux 100% Bootstrap pur */
+    /* .debug { outline: 1px dashed rgba(0,0,0,.15); } */
+  </style>
+</head>
+<body>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">KYSG</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="A propos.html">A propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="programmes.html">Programmes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Galerie.html">Galerie</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="renseignement.html">renseignement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactt.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+  
+<!-- Contact Section -->
+<section class="contact-section py-5">
+  <div class="container">
+    <div class="section-header text-center mb-4" data-aos="fade-down">
+      <h2>CONTACT</h2>
+      <p>CONTACTEZ-NOUS</p>
+    </div>
+
+    <div class="row">
+      <!-- Infos -->
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="contact-info">
+
+          <div class="info-box d-flex mb-4">
+            <div class="info-icon me-3"><i class="fas fa-map-marker-alt fa-2x text-primary"></i></div>
+            <div class="info-content">
+              <h4>Adresse :</h4>
+              <p>Yembeul station en face CMS</p>
+            </div>
+          </div>
+
+          <div class="info-box d-flex mb-4">
+            <div class="info-icon me-3"><i class="fas fa-phone-alt fa-2x text-success"></i></div>
+            <div class="info-content">
+              <h4>Appelez-nous :</h4>
+              <p>+221 77 452 51 19</p>
+              <p>+221 77 286 48 94</p>
+            </div>
+          </div>
+
+          <div class="info-box d-flex mb-4">
+            <div class="info-icon me-3"><i class="fas fa-envelope fa-2x text-danger"></i></div>
+            <div class="info-content">
+              <h4>Email :</h4>
+              <p>keuryayesokhna@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- Réseaux sociaux -->
+          <div class="social-links mt-4">
+            <a href="https://www.facebook.com/share/1McdS7rhxa/?mibextid=wwXIfr" target="_blank" class="btn btn-outline-primary rounded-circle me-2">
+              <i class="fab fa-facebook-f">facebook</i>
+            </a>
+            <a href="https://www.instagram.com/keur_yaye_sokhna?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="btn btn-outline-danger rounded-circle me-2">
+              <i class="fab fa-instagram">instagram</i>
+            </a>
+            <a href="https://wa.me/221774525119" target="_blank" class="btn btn-outline-success rounded-circle me-2">
+              <i class="fab fa-whatsapp">watshapp</i>
+            </a>
+            <a href="https://www.tiktok.com/@keuryayesokhna?_t=ZM-8ycys4jqvOY&_r=1" target="_blank" class="btn btn-outline-danger rounded-circle">
+              <i class="fab fa-tiktok">tiktok</i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulaire -->
+      <div class="col-lg-7 mt-4 mt-lg-0" data-aos="fade-left">
+        <div class="contact-form">
+          <form id="whatsappForm">
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 mt-3 mt-md-0">
+                <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+              </div>
+            </div>
+
+            <input type="text" id="subject" class="form-control mt-3" placeholder="Subject" required>
+            <textarea id="message" class="form-control mt-3" placeholder="Message" required></textarea>
+
+            <div class="text-center mt-3">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer -->
+<!-- FOOTER -->
+<footer class="bg-dark text-light pt-5 pb-3">
+
+
+      
+
+    <!-- Copyright -->
+    <div class="text-center mt-4 border-top pt-3">
+      <p class="mb-0 small">© 2025 Keur Yaye Sokhna Gueye Bilingual School. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Bootstrap 5 (JS bundle = Popper inclus) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+<script>
+document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // Empêche l'envoi classique
+
+    // Récupération des valeurs
+    const name = encodeURIComponent(document.getElementById("name").value);
+    const email = encodeURIComponent(document.getElementById("email").value);
+    const subject = encodeURIComponent(document.getElementById("subject").value);
+    const message = encodeURIComponent(document.getElementById("message").value);
+
+    // Numéro WhatsApp (avec code pays, ici exemple +221 pour Sénégal)
+    const phoneNumber = "221781428402";
+
+    // Construction du message
+    const text = `Name: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+
+    // Redirection vers WhatsApp
+    window.open(`https://wa.me/${phoneNumber}?text=${text}`, "_blank");
+});
+
+</script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,   // vitesse de l’animation
+    once: true,      // une seule fois (évite les bugs mobile)
+    easing: 'ease-in-out',
+    disable: false   // animations aussi sur mobile
+  });
+</script>
+
+  <!-- (Optionnel) Script perso si nécessaire -->
+  <!-- <script>/* Ton JS ici */</script> -->
+</body>
+</html>
