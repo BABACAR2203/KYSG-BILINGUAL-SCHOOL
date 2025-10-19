@@ -50,11 +50,38 @@
 </nav>
 
  <!-- Hero Section avec Image -->
-<section class="hero">
-  <div class="hero-image">
-    <img src="KEUR YAYE SOKHNA GUEYE MURALE 2_pages-to-jpg-0001.jpg" alt="KYSG Bilingual School" class="img-fluid w-100">
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">Keur Yaye Sokhna Gueye<br><span>Bilingual School</span></h1>
+    <p class="hero-quote" id="animated-text"></p>
+    <a href="#about" class="hero-btn">Découvrir l’école</a>
   </div>
 </section>
+
+<!-- Animation du texte -->
+<script>
+  const text = "Chaque enfant est une promesse ✨";
+  const textElement = document.getElementById("animated-text");
+  let index = 0;
+
+  function typeEffect() {
+    if (index < text.length) {
+      textElement.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeEffect, 80);
+    }
+  }
+
+  window.addEventListener("load", typeEffect);
+
+  // Effet de parallax léger sur le fond
+  window.addEventListener('scroll', () => {
+    const heroBg = document.querySelector('.hero-bg');
+    heroBg.style.transform = `scale(1.1) translateY(${window.scrollY * 0.4}px)`;
+  });
+</script>
+
 
 
 
@@ -111,7 +138,7 @@
         
         <div class="col-md-4">
           <div class="card border-0 shadow-sm overflow-hidden">
-            <img src="new1.jpg" class="card-img-top" alt="Projet 5">
+            <img src="2.png" class="card-img-top" alt="Projet 5">
             <div class="card-img-overlay bg-warning bg-opacity-90 d-flex flex-column justify-content-end text-white" style="transform: translateY(100%); transition: transform 0.3s ease;">
               
             </div>
@@ -138,7 +165,31 @@
 
          <div class="col-md-4">
           <div class="card border-0 shadow-sm overflow-hidden">
+            <img src="1.png" class="card-img-top" alt="Projet 5">
+            <div class="card-img-overlay bg-warning bg-opacity-90 d-flex flex-column justify-content-end text-white" style="transform: translateY(100%); transition: transform 0.3s ease;">
+              
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card border-0 shadow-sm overflow-hidden">
             <img src="new6.jpg" class="card-img-top" alt="Projet 5">
+            <div class="card-img-overlay bg-warning bg-opacity-90 d-flex flex-column justify-content-end text-white" style="transform: translateY(100%); transition: transform 0.3s ease;">
+              
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card border-0 shadow-sm overflow-hidden">
+            <img src="new1.jpg" class="card-img-top" alt="Projet 5">
+            <div class="card-img-overlay bg-warning bg-opacity-90 d-flex flex-column justify-content-end text-white" style="transform: translateY(100%); transition: transform 0.3s ease;">
+              
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card border-0 shadow-sm overflow-hidden">
+            <img src="3.png" class="card-img-top" alt="Projet 5">
             <div class="card-img-overlay bg-warning bg-opacity-90 d-flex flex-column justify-content-end text-white" style="transform: translateY(100%); transition: transform 0.3s ease;">
               
             </div>

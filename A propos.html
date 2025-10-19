@@ -51,12 +51,38 @@
 
 
 
-  <!-- Hero Section avec Image -->
-<section class="hero">
-  <div class="hero-image">
-    <img src="KEUR YAYE SOKHNA GUEYE MURALE 2_pages-to-jpg-0001.jpg" alt="KYSG Bilingual School" class="img-fluid w-100">
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">Keur Yaye Sokhna Gueye<br><span>Bilingual School</span></h1>
+    <p class="hero-quote" id="animated-text"></p>
+    <a href="#about" class="hero-btn">Découvrir l’école</a>
   </div>
 </section>
+
+<!-- Animation du texte -->
+<script>
+  const text = "Chaque enfant est une promesse ✨";
+  const textElement = document.getElementById("animated-text");
+  let index = 0;
+
+  function typeEffect() {
+    if (index < text.length) {
+      textElement.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeEffect, 80);
+    }
+  }
+
+  window.addEventListener("load", typeEffect);
+
+  // Effet de parallax léger sur le fond
+  window.addEventListener('scroll', () => {
+    const heroBg = document.querySelector('.hero-bg');
+    heroBg.style.transform = `scale(1.1) translateY(${window.scrollY * 0.4}px)`;
+  });
+</script>
+
 
 <section class="py-5 bg-white" id="about">
   <div class="container">
