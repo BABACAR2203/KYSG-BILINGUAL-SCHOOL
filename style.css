@@ -354,6 +354,92 @@
   opacity: 1;
 }
 
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* 🔹 Image de fond (remplace l’URL ici) */
+.hero-bg {
+  background: url('KEUR\ YAYE\ SOKHNA\ GUEYE\ MURALE\ 2_pages-to-jpg-0001.jpg') center/cover no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: scale(1);
+  transition: transform 0.5s ease-out;
+  animation: zoomIn 12s ease-in-out infinite alternate;
+  filter: brightness(0.65);
+}
+
+@keyframes zoomIn {
+  from { transform: scale(1); }
+  to { transform: scale(1.15); }
+}
+
+.hero-content {
+  animation: fadeInUp 1.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.hero-title span {
+  color: white;
+}
+
+.hero-quote {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffc107;
+  letter-spacing: 1px;
+  min-height: 30px;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: #ffc107;
+  color: #000;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: white;
+  color: #111;
+  transform: scale(1.05);
+}
+
 
 
 
